@@ -1,0 +1,28 @@
+Angular:
+Typescript üzerine kurulu geliştirme platformudur. Client ve server tabanlıdır. Uygulama içi datalarla ara katmanlarla haberleşilir.
+Projemizi görev yerleri dağılımı yapılıcak şekilde kullanabiriz. Modul(orn.startup), component, html ,css
+Şablonlarımızda değişiklik yaptığımızda dinamik olarak anlık DOM ögesini güncelleyibilir
+[]: Bileşene ait pararemtleri çağırıp içerisine yazarız. Bileşene ait özelliği çağırıp değer atayabilirim
+olusturulan component import edilmeli ve sonra declarationsa eklenmelidir
+
+Directives: DOM öğelerini kontrol altına alıp yönetiriz. genelde vs hostbinding methodu kullanırız. elementten anlık sonuç alırız
+Components: Web sayfasında gosterilmek istenilen alanları ayrı ayrı componentler olusturulup tek çatı altında app.modulunde kullanırız
+Data-binding: 2 çeşit tipi vardır. one ve two way. degiskeni,parametreyi çağırma 
+one: string interpolation, property binding, event binding- directive ve olusan componentimiz içindeki değiskenleri kendi app içerisinde htmlde çağrılmasıdır
+
+two way: anlık sonuç alma
+
+
+
+1) Appmodule.ts: modullerin entegre edildigi, ngmodulden yararlanan sınıftır. ngmodule elemanları ile islem yapılır.
+1.1) Declarations:  kullanılan componentleri,directiveleri tanımladığımız kısım
+1.2) İmports: anguların kendine ait modullerini kullanıp
+1.2.1) FormsModule: Anguların kendine ait modullerini kullanıp islem yapma, 3.parti ve angularda tanımlı olan moduller.
+
+2) Component.ts: html çıktılarına karsı gelen ref olan classtır. datalarımızı degiskenlerimizi buradan gondeririz
+
+npm install -g @angular/cli
+Yeni klasor olusturma : mkdir folder1
+Yeni alt klasor olusturma: ng new klasorismi
+Yeni component olusturma: ng generate component component ismi
+Proje çalıştırma: ng serve veya ng serve --open
